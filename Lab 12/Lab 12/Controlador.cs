@@ -20,6 +20,7 @@ namespace Lab_12
         public void OnAgregarComida(string nombre, decimal carbohidratos, decimal proteinas, decimal grasas)
         {
             Comida comida = new Comida(nombre, carbohidratos, proteinas, grasas);
+            comida.CalcCalorias();
             comidas.Agregar(comida);
             form1.AgregarComida(comida);
         }

@@ -22,9 +22,9 @@ namespace Comidas
             this.Grasas = Grasas;
         }
 
-        public decimal CalcCalorias()
+        public void CalcCalorias()
         {
-            return 4 * Carbohidratos + 4 * Proteinas + 9 * Grasas;
+            Calorias = 4 * Carbohidratos + 4 * Proteinas + 9 * Grasas;
         }
         public override string ToString()
         {
