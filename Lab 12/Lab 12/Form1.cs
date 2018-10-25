@@ -33,5 +33,16 @@ namespace Lab_12
         {
             listadoComidas.Items.Add(comida);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (listadoComidas.SelectedItems.Count != 0)
+            {
+                while (listadoComidas.SelectedIndex != -1)
+                {
+                    listadoComidas.Items.RemoveAt(listadoComidas.SelectedIndex);
+                }
+            }
+        }
     }
 }

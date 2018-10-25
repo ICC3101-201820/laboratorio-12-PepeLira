@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.label1 = new System.Windows.Forms.Label();
-            this.nombreTextBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.carbohidratosNumeric = new System.Windows.Forms.NumericUpDown();
+            this.grasasNumeric = new System.Windows.Forms.NumericUpDown();
+            this.proteinasNumeric = new System.Windows.Forms.NumericUpDown();
+            this.agregarButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.agregarButton = new System.Windows.Forms.Button();
-            this.listadoComidas = new System.Windows.Forms.CheckedListBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.nombreTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.proteinasNumeric = new System.Windows.Forms.NumericUpDown();
-            this.grasasNumeric = new System.Windows.Forms.NumericUpDown();
-            this.carbohidratosNumeric = new System.Windows.Forms.NumericUpDown();
+            this.button2 = new System.Windows.Forms.Button();
+            this.listadoComidas = new System.Windows.Forms.CheckedListBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.proteinasNumeric)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grasasNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carbohidratosNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grasasNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proteinasNumeric)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -77,30 +77,36 @@
             this.splitContainer1.SplitterDistance = 266;
             this.splitContainer1.TabIndex = 0;
             // 
-            // label1
+            // carbohidratosNumeric
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 68);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre";
+            this.carbohidratosNumeric.Location = new System.Drawing.Point(109, 172);
+            this.carbohidratosNumeric.Name = "carbohidratosNumeric";
+            this.carbohidratosNumeric.Size = new System.Drawing.Size(120, 20);
+            this.carbohidratosNumeric.TabIndex = 8;
             // 
-            // nombreTextBox
+            // grasasNumeric
             // 
-            this.nombreTextBox.Location = new System.Drawing.Point(109, 65);
-            this.nombreTextBox.Name = "nombreTextBox";
-            this.nombreTextBox.Size = new System.Drawing.Size(118, 20);
-            this.nombreTextBox.TabIndex = 0;
+            this.grasasNumeric.Location = new System.Drawing.Point(109, 137);
+            this.grasasNumeric.Name = "grasasNumeric";
+            this.grasasNumeric.Size = new System.Drawing.Size(120, 20);
+            this.grasasNumeric.TabIndex = 7;
             // 
-            // label2
+            // proteinasNumeric
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 103);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Proteinas";
+            this.proteinasNumeric.Location = new System.Drawing.Point(109, 101);
+            this.proteinasNumeric.Name = "proteinasNumeric";
+            this.proteinasNumeric.Size = new System.Drawing.Size(120, 20);
+            this.proteinasNumeric.TabIndex = 3;
+            // 
+            // agregarButton
+            // 
+            this.agregarButton.Location = new System.Drawing.Point(95, 238);
+            this.agregarButton.Name = "agregarButton";
+            this.agregarButton.Size = new System.Drawing.Size(75, 23);
+            this.agregarButton.TabIndex = 0;
+            this.agregarButton.Text = "Agregar";
+            this.agregarButton.UseVisualStyleBackColor = true;
+            this.agregarButton.Click += new System.EventHandler(this.agregarButton_Click);
             // 
             // label3
             // 
@@ -120,32 +126,30 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Grasas";
             // 
-            // agregarButton
+            // label2
             // 
-            this.agregarButton.Location = new System.Drawing.Point(95, 238);
-            this.agregarButton.Name = "agregarButton";
-            this.agregarButton.Size = new System.Drawing.Size(75, 23);
-            this.agregarButton.TabIndex = 0;
-            this.agregarButton.Text = "Agregar";
-            this.agregarButton.UseVisualStyleBackColor = true;
-            this.agregarButton.Click += new System.EventHandler(this.agregarButton_Click);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(31, 103);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Proteinas";
             // 
-            // listadoComidas
+            // nombreTextBox
             // 
-            this.listadoComidas.FormattingEnabled = true;
-            this.listadoComidas.Location = new System.Drawing.Point(92, 40);
-            this.listadoComidas.Name = "listadoComidas";
-            this.listadoComidas.Size = new System.Drawing.Size(340, 304);
-            this.listadoComidas.TabIndex = 0;
+            this.nombreTextBox.Location = new System.Drawing.Point(109, 65);
+            this.nombreTextBox.Name = "nombreTextBox";
+            this.nombreTextBox.Size = new System.Drawing.Size(118, 20);
+            this.nombreTextBox.TabIndex = 0;
             // 
-            // button2
+            // label1
             // 
-            this.button2.Location = new System.Drawing.Point(198, 369);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 29);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Eliminar Selección";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(31, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nombre";
             // 
             // label5
             // 
@@ -156,26 +160,23 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Listado";
             // 
-            // proteinasNumeric
+            // button2
             // 
-            this.proteinasNumeric.Location = new System.Drawing.Point(109, 101);
-            this.proteinasNumeric.Name = "proteinasNumeric";
-            this.proteinasNumeric.Size = new System.Drawing.Size(120, 20);
-            this.proteinasNumeric.TabIndex = 3;
+            this.button2.Location = new System.Drawing.Point(198, 369);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(156, 29);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Eliminar Selección";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // grasasNumeric
+            // listadoComidas
             // 
-            this.grasasNumeric.Location = new System.Drawing.Point(109, 137);
-            this.grasasNumeric.Name = "grasasNumeric";
-            this.grasasNumeric.Size = new System.Drawing.Size(120, 20);
-            this.grasasNumeric.TabIndex = 7;
-            // 
-            // carbohidratosNumeric
-            // 
-            this.carbohidratosNumeric.Location = new System.Drawing.Point(109, 172);
-            this.carbohidratosNumeric.Name = "carbohidratosNumeric";
-            this.carbohidratosNumeric.Size = new System.Drawing.Size(120, 20);
-            this.carbohidratosNumeric.TabIndex = 8;
+            this.listadoComidas.FormattingEnabled = true;
+            this.listadoComidas.Location = new System.Drawing.Point(92, 40);
+            this.listadoComidas.Name = "listadoComidas";
+            this.listadoComidas.Size = new System.Drawing.Size(340, 304);
+            this.listadoComidas.TabIndex = 0;
             // 
             // Form1
             // 
@@ -191,9 +192,9 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.proteinasNumeric)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grasasNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.carbohidratosNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grasasNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proteinasNumeric)).EndInit();
             this.ResumeLayout(false);
 
         }
